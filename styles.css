@@ -669,95 +669,68 @@ section{
 
 
 /* signIn.html */
-.form-signin {
-    max-width: 330px;
-    padding: 15px;
-    margin: 0 auto;
-    margin-top: 10%;
-    color: white;
-    font-size: 15px;
+/* signIn.html CSS */
+
+/* Wrap the form inside a container */
+.signIn-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Make the container full height of the viewport */
 }
 
-.form-signin .form-signin-heading,
-.form-signin .checkbox {
-    margin-bottom: 10px;
+.customer-form {
+    width: 30%; /* Adjust the width as needed */
+    padding: 20px; /* Add padding for better visual appearance */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    margin-top: 15%;
+    margin-left: 35%;
 }
 
-.form-signin .checkbox {
-    font-weight: normal;
+.customer-form label {
+    color: white; /* Label color */
+    font-size: 18px; /* Label font size */
 }
 
-.form-signin .form-control {
-    position: relative;
-    height: auto;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 4px;
+#email,
+.form-control {
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add padding for better visual appearance */
+    margin-bottom: 15px; /* Add some space between input fields */
+    border: 2px solid #ffffff; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    color: #ffffff; /* Text color */
+    font-size: 16px; /* Font size */
 }
 
-.form-signin .form-control:focus {
-    z-index: 2;
+#email:focus,
+.form-control:focus {
+    border-color: purple; /* Change border color on focus */
+    outline: none; /* Remove default focus outline */
 }
 
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
+.form-control::placeholder {
+    color: rgba(61, 58, 58, 0.7); /* Placeholder text color */
+}
+
+.button1 {
+    text-align: center; /* Center the button */
 }
 
 .btn-primary {
-    background-color: #e84393;
-    border-color: #b32a83;
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 230px;
+    padding: 10px 20px; /* Add padding for better visual appearance */
+    background-color: var(--pink); /* Primary button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Add cursor pointer */
+    font-size: 16px; /* Font size */
 }
 
 .btn-primary:hover {
-    background-color: #d63ccf;
-    border-color: #b839df;
-}
-
-.btn-block {
-    display: block;
-    width: 78%;
-    padding: 10px;
-    font-size: 16px;
-    line-height: 1.42857143;
-    color: #fff;
-    background-color: #e84393;
-    border: 1px solid #e84393;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#email{
-    width: 78%;
-    padding: 10px; 
-    margin-bottom: 5px; 
-    border: 2px solid #ffffff;
-    border-radius: 5px; 
-    background-color: white; 
-    color: black; 
-    font-size: 15px; 
-}
-
-
-#email:focus {
-    border-color: purple; 
-    outline: none; 
-    
-}
-
-#email::placeholder {
-    color: rgb(226, 208, 208);
-}
-
-.form-signin input[type="password"]::placeholder {
-    color: rgb(226, 208, 208);
+    background-color: #a0376a; /* Darker color on hover */
 }
 
 /* contact.html*/
